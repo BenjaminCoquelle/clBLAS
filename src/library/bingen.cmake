@@ -18,6 +18,8 @@ ${CLTEMPLATE_PATH}/sgemm_gcn_SmallMatrices.cl
 ${CLTEMPLATE_PATH}/sgemm_gcn_bigMatrices.cl
 ${CLTEMPLATE_PATH}/sgemm_hawaiiSplit64_32.cl
 ${CLTEMPLATE_PATH}/dtrsm_gpu192.cl
+${CLTEMPLATE_PATH}/dgemm_hawai.cl
+${CLTEMPLATE_PATH}/dgemm_gcn_SmallMatrices.cl
 )
 
 
@@ -29,10 +31,7 @@ ${CLTEMPLATE_PATH}/sgemm_gcn_SmallMatrices.cl
 
 
 set (BIN_CL_TEMPLATES_HAWAII_CL1
-${CLTEMPLATE_PATH}/dgemm_hawai.cl
 ${CLTEMPLATE_PATH}/dtrsm_gpu.cl
-${CLTEMPLATE_PATH}/dgemm_hawaiiChannelConfilct.cl
-${CLTEMPLATE_PATH}/dgemm_gcn_SmallMatrices.cl
 )
 
 MESSAGE("run bingen")
